@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+	<title>Panache</title>
+</head>
+<body>
+	<header>
+	<!---------Logo------------->
+		<div class="logo">
+			<h1><span>P</span>anache</h1>
+		</div>
+	<!---------Nav items------------->
+		<div class="navigation">
+			<div class="menuToggle" onclick="toggleMenu();"></div>
+			<ul class="nav-items">
+				<li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+				<li><a href="#about" onclick="toggleMenu();">About</a></li>
+				<li><a href="#products" onclick="toggleMenu();">Products</a></li>
+				<li><a href="#gallery" onclick="toggleMenu();">Gallery</a></li>
+				<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+			</ul>
+		</div>		
+	</header>
+	<!---------------------Banner--------------->
+	<section class="banner" id="banner">
+		<div class="main">
+			<h2>Define Your Style</h2>
+			<a href="#gallery" class="btn">Get Inspired</a>
+		</div>
+	</section>
+	<!---------------------About--------------->
+	<section class="about" id="about">
+		<div class="row">
+			<div class="col50">
+				<h2>Who we are...</h2>
+				<p>We are a small business started in 1991 offering home furniture and decor.
+					<br>
+				Choice is the key when you are developing the style for your home. Walk into 
+				our store to find numerous options & style ideas. Our home decor experts help 
+				you carve out a unique look for every corner of your space which will reflect 
+				your true style.</p>
+			</div>
+			<div class="col50">
+				<div class="img-container">
+					<img src="images/sidekix-media-6zGaqYyRiOg-unsplash.jpg">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!---------------------Products--------------->
+	<section class="products" id="products">
+		<div class="products-title">
+			<h2>Our Products</h2>
+		</div>
+		<div class="products-images">
+			<div class="products-container">
+				<div class="products-container-images">
+					<img src="images/hector-falcon-vc0MHcslfmw-unsplash.jpg">
+				</div>
+				<div class="products-container-text">
+					<h3>Furniture</h3>
+				</div>
+			</div>
+			<div class="products-container">
+				<div class="products-container-images">
+					<img src="images/courtney-smith-bJL-rRQV4bQ-unsplash.jpg">
+				</div>
+				<div class="products-container-text">
+					<h3>Home Decor</h3>
+				</div>
+			</div>
+			<div class="products-container">
+				<div class="products-container-images">
+					<img src="images/devon-janse-van-rensburg-LUvdI4uCNnM-unsplash.jpg">
+				</div>
+				<div class="products-container-text">
+					<h3>Bedding & Accessories</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!---------------------Gallery--------------->
+
+	<section class="gallery" id="gallery">
+		<div class="gallery-title">
+			<h2>Gallery</h2>
+			<p>Give your space a refresh with our unique designs.</p>
+		</div>
+		<div class="row">
+			<div class="column">
+				<img src="images/jane-duursma-yxVDv1hRXOo-unsplash.jpg" style="width: 100%" alt="">
+				<img src="images/collov-home-design--5HHAP5UWFM-unsplash.jpg" style="width: 100%"alt="">
+			</div>
+			<div class="column">
+				<img src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" style="width: 100%"alt="">
+				<img src="images/ruthie-schuster-OfSYY6Vs-pM-unsplash.jpg" style="width: 100%"alt="">
+			</div>
+			<div class="column">
+				<img src="images/max-letek-c5tlBxkmhCA-unsplash.jpg" style="width: 100%"alt="">
+				<img src="images/dayana-brooke-RGCmPjqz-3w-unsplash.jpg" style="width: 100%"alt="">
+				<img src="images/jonny-caspari-KuudDjBHIlA-unsplash.jpg" style="width: 100%"alt="">
+			</div>
+			<div class="column">
+				<img src="images/trend-s7KXPQaMOu0-unsplash.jpg" style="width: 100%"alt="">
+				<img src="images/collov-home-design-Pf-GjKfYGO4-unsplash.jpg" style="width: 100%"alt="">
+			</div>
+		</div>
+	</section>
+	
+	<!---------------------Subscribe--------------->
+	<section class="subscribe" id="subscribe">
+		<div class="sub-container">
+			<div class="sub-text">
+				<h2>SUBSCRIBE</h2>
+				<p>Get the latest updates and promotions delivered to your inbox</p>
+			</div>
+			<div class="sub-form">
+				<input type="text" placeholder="Enter your email">
+				<input type="submit" value="Sign Up">
+			</div>
+		</div>
+	</section>
+
+	<!---------------------Contact--------------->
+	<section class="contact" id="contact">
+		<div class="info">
+			<h2>Visit Us</h2>
+			<p>1650, Park Street<br>Windsor ON N8W 2J8</p>
+			<p>Email: <a href="#">panache@gmail.com</a></p>
+			<p>Phone: 226-890-9087</p>
+			<br>
+			<p><b>Store Hours:</b> <br> Weekdays: 10am to 6pm <br> Saturday: 10am to 5pm <br> Sunday: 12pm to 5pm</p>
+		</div>
+	</section>
+
+	<!---------------------Script--------------->
+	<script type="text/javascript">
+		window.addEventListener('scroll', function(){
+			const header = document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+		})
+
+		function toggleMenu() {
+			const menuToggle = document.querySelector('.menuToggle');
+			const navigation = document.querySelector('.nav-items');
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
